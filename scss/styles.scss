@@ -1,6 +1,4 @@
-$primary: #5265E1;
-$secondary: #FA5959;
-$accordion-button-icon: url("images/icon-arrow.svg");
+@import "sass-utils/variables";
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
@@ -14,4 +12,11 @@ $accordion-button-icon: url("images/icon-arrow.svg");
     @extend .nav;
     @extend .justify-content-evenly;
     @extend .w-100;
+}
+
+.custom-card {
+    @extend .card;
+    @extend .align-items-center;
+    @extend .border-light;
+    @extend .m-3;
 }
