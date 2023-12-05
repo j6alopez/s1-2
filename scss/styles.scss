@@ -1,22 +1,10 @@
 @import "sass-utils/variables";
 
+//Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-.nav-border {
-    position: relative;
-    bottom: 0;
-    left: 0;
-}
+//Custom code 
 
-.main-nav {
-    @extend .nav;
-    @extend .justify-content-evenly;
-    @extend .w-100;
-}
+@import "base/navigation.scss";
 
-.custom-card {
-    @extend .card;
-    @extend .align-items-center;
-    @extend .border-light;
-    @extend .m-3;
-}
+@import "components/card.scss";

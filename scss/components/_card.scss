@@ -1,0 +1,6 @@
+.custom-card {
+    @extend .card;
+    @extend .align-items-center;
+    @extend .border-light;
+    @extend .m-3;
+}
