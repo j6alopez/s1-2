@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Document</title>
+    <title>BookMark</title>
 </head>
 
 <body>
@@ -27,7 +27,7 @@
                             <a class="nav-link " href="#">CONTACT</a>
                         </li>
                         <li class="nav-item w-25 me-5">
-                            <a class="nav-link bg-danger text-white rounded-1" href="#">LOGIN</a>
+                            <a class="nav-link bg-secondary text-white rounded-1" href="#">LOGIN</a>
                         </li>
                     </ol>
                 </nav>
@@ -45,7 +45,7 @@
                 </p>
                 <div class="btn-group" role="group">
                     <button class="btn btn-primary me-2 rounded-1 " type="button">Get it on Chrome</button>
-                    <button class="btn btn-light ms-2 rounded-1 "   type="button">Get it on Firefox</button>
+                    <button class="btn btn-light ms-2 rounded-1 " type="button">Get it on Firefox</button>
                 </div>
             </div>
             <div class="col">
@@ -53,36 +53,89 @@
             </div>
         </div>
     </section>
-    <section class="container">
-        <h2 class="text-center">Features</h2>
-        <p class="text-center">
+    <section class="container text-center">
+        <h2>Features</h2>
+        <p>
             Our aim is to make it quick and easy for you to access your <br>
             favourite websites. Your bookmarks sync between your devices <br>
             so you can access them on the go.
         </p>
         <nav class="nav nav-tabs justify-content-center mb-5 border-0">
-            <a class="nav-link border-bottom danger">Simple Bookmarking</a>
-            <a class="nav-link disabled border-bottom" href="#">Speedy Searching</a>
-            <a class="nav-link disabled border-bottom " href="#">Easy Sharing</a>
-        </nav>
-    </section>
-    <section class="container ">
-        <div class="row align-items-center container-fluid">
-            <div class="col align-items-center">
-                <img src="images/illustration-features-tab-1.svg" alt="Black desktop">
+            <div class="nav nav-tabs border-bottom" id="nav-tab" role="tablist">
+                <button class="custom-nav-link active" id="nav-simple-bookmarking-tab" data-bs-toggle="tab" data-bs-target="#nav-simple-bookmarking"
+                    type="button" role="tab" aria-controls="nav-simple-bookmarking" aria-selected="true">Simple Bookmarking</button>
+                <button class="custom-nav-link" id="nav-speedy-searching-tab" data-bs-toggle="tab" data-bs-target="#nav-speedy-searching"
+                    type="button" role="tab" aria-controls="nav-speedy-searching" aria-selected="false">Speedy Searching</button>
+                <button class="custom-nav-link" id="nav-easy-sharing-tab" data-bs-toggle="tab" data-bs-target="#nav-easy-sharing"
+                    type="button" role="tab" aria-controls="nav-easy-sharing" aria-selected="false">Easy Sharing</button>
             </div>
-            <div class="col">
-                <div class="row container-fluid ">
-                    <h2>Bookmark in one click</h2>
-                    <p>
-                        Organize your bookmarks however you like. Our <br>
-                        simple drag-and-drop interface gives you complete <br>
-                        control over how you manage your favourite sites.
-                    </p>
-                </div>
-                <div class="row align-items-start container-fluid">
+        </nav>
+        <div class="tab-content border" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-simple-bookmarking" role="tabpanel" aria-labelledby="nav-simple-bookmarking-tab">
+                <section class="container ">
+                    <div class="row align-items-center container-fluid">
+                        <div class="col align-items-center">
+                            <img src="images/illustration-features-tab-1.svg" alt="Black desktop">
+                        </div>
+                        <div class="col">
+                            <div class="row container-fluid">
+                                <h2>Bookmark in one click</h2>
+                                <p>
+                                    Organize your bookmarks however you like. Our <br>
+                                    simple drag-and-drop interface gives you complete <br>
+                                    control over how you manage your favourite sites.
+                                </p>
+                            </div>
+                            <div class="row align-items-start container-fluid">
+                                <div class="col">
+                                    <button class="btn btn-primary me-2 rounded-1 " type="button">More info</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="tab-pane fade" id="nav-easy-sharing" role="tabpanel" aria-labelledby="nav-easy-sharing-tab">
+                <div class="row align-items-center container-fluid">
+                    <div class="col align-items-center">
+                        <img src="images/illustration-features-tab-2.svg" alt="Black desktop">
+                    </div>
                     <div class="col">
-                        <button class="btn btn-primary me-2 rounded-1 " type="button">More info</button>
+                        <div class="row container-fluid">
+                            <h2>Intelligent Search</h2>
+                            <p>
+                                Our powerful search feature will help you find saved <br>
+                                sites in no time at all. No need to trawl through all of <br>
+                                your bookmarks.
+                            </p>
+                        </div>
+                        <div class="row align-items-start container-fluid">
+                            <div class="col">
+                                <button class="btn btn-primary me-2 rounded-1 " type="button">More info</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-speedy-searching" role="tabpanel" aria-labelledby="nav-speedy-searching-tab">
+                <div class="row align-items-center container-fluid">
+                    <div class="col align-items-center">
+                        <img src="images/illustration-features-tab-3.svg" alt="Black desktop">
+                    </div>
+                    <div class="col">
+                        <div class="row container-fluid">
+                            <h2>Share your bookmarks</h2>
+                            <p>
+                                Easily share your bookmarks and collections with <br>
+                                others. Create a shareable linkg that you can send at <br>
+                                the click of a button.
+                            </p>
+                        </div>
+                        <div class="row align-items-start container-fluid">
+                            <div class="col">
+                                <button class="btn btn-primary me-2 rounded-1 " type="button">More info</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -132,29 +185,33 @@
         </p>
         <div class="accordion accordion-flush justify-content-center mx-auto ">
             <div class="accordion-item">
-                <h2 class="accordion-header" >
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" aria-expanded="false">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        aria-expanded="false">
                         What is a bookmark?
                     </button>
                 </h2>
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" aria-expanded="false">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        aria-expanded="false">
                         How can I request a new browser?
                     </button>
                 </h2>
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" aria-expanded="false">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        aria-expanded="false">
                         Is there a mobile app?
                     </button>
                 </h2>
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" aria-expanded="false">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        aria-expanded="false">
                         What about other Chromium browsers?
                     </button>
                 </h2>
