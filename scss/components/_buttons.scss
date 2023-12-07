@@ -1,6 +1,11 @@
 .add-extension-button {
-    @extend btn;
-    @extend btn-primary;
-    @extend rounded-2;
-    @extend mb-3;
+    @extend .btn;
+    @extend .btn-primary;
+    @extend .rounded-2;
+    @extend .mb-3;
+}
+.more-info-button {
+    @extend .btn; 
+    @extend .btn-primary;
+    @extend .rounded-1;   
 }

@@ -2435,7 +2435,7 @@ textarea.form-control-lg {
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
 }
-.btn-check[disabled] + .btn, .btn-check:disabled + .btn {
+.btn-check[disabled] + .btn, .btn-check[disabled] + .more-info-button, .btn-check[disabled] + .add-extension-button, .btn-check:disabled + .btn, .btn-check:disabled + .more-info-button, .btn-check:disabled + .add-extension-button {
   pointer-events: none;
   filter: none;
   opacity: 0.65;
@@ -2636,11 +2636,11 @@ textarea.form-control-lg {
 .input-group > .form-floating:focus-within {
   z-index: 5;
 }
-.input-group .btn {
+.input-group .btn, .input-group .more-info-button, .input-group .add-extension-button {
   position: relative;
   z-index: 2;
 }
-.input-group .btn:focus {
+.input-group .btn:focus, .input-group .more-info-button:focus, .input-group .add-extension-button:focus {
   z-index: 5;
 }
 
@@ -2662,7 +2662,9 @@ textarea.form-control-lg {
 .input-group-lg > .form-control,
 .input-group-lg > .form-select,
 .input-group-lg > .input-group-text,
-.input-group-lg > .btn {
+.input-group-lg > .btn,
+.input-group-lg > .more-info-button,
+.input-group-lg > .add-extension-button {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   border-radius: var(--bs-border-radius-lg);
@@ -2671,7 +2673,9 @@ textarea.form-control-lg {
 .input-group-sm > .form-control,
 .input-group-sm > .form-select,
 .input-group-sm > .input-group-text,
-.input-group-sm > .btn {
+.input-group-sm > .btn,
+.input-group-sm > .more-info-button,
+.input-group-sm > .add-extension-button {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border-radius: var(--bs-border-radius-sm);
@@ -2887,7 +2891,7 @@ textarea.form-control-lg {
   z-index: 4;
 }
 
-.btn {
+.btn, .more-info-button, .add-extension-button {
   --bs-btn-padding-x: 0.75rem;
   --bs-btn-padding-y: 0.375rem;
   --bs-btn-font-family: ;
@@ -2921,41 +2925,41 @@ textarea.form-control-lg {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .btn {
+  .btn, .more-info-button, .add-extension-button {
     transition: none;
   }
 }
-.btn:hover {
+.btn:hover, .more-info-button:hover, .add-extension-button:hover {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
 }
-.btn-check + .btn:hover {
+.btn-check + .btn:hover, .btn-check + .more-info-button:hover, .btn-check + .add-extension-button:hover {
   color: var(--bs-btn-color);
   background-color: var(--bs-btn-bg);
   border-color: var(--bs-btn-border-color);
 }
-.btn:focus-visible {
+.btn:focus-visible, .more-info-button:focus-visible, .add-extension-button:focus-visible {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
   outline: 0;
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn-check:focus-visible + .btn {
+.btn-check:focus-visible + .btn, .btn-check:focus-visible + .more-info-button, .btn-check:focus-visible + .add-extension-button {
   border-color: var(--bs-btn-hover-border-color);
   outline: 0;
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {
+.btn-check:checked + .btn, .btn-check:checked + .more-info-button, .btn-check:checked + .add-extension-button, :not(.btn-check) + .btn:active, :not(.btn-check) + .more-info-button:active, :not(.btn-check) + .add-extension-button:active, .btn:first-child:active, .more-info-button:first-child:active, .add-extension-button:first-child:active, .btn.active, .active.more-info-button, .active.add-extension-button, .btn.show, .show.more-info-button, .show.add-extension-button {
   color: var(--bs-btn-active-color);
   background-color: var(--bs-btn-active-bg);
   border-color: var(--bs-btn-active-border-color);
 }
-.btn-check:checked + .btn:focus-visible, :not(.btn-check) + .btn:active:focus-visible, .btn:first-child:active:focus-visible, .btn.active:focus-visible, .btn.show:focus-visible {
+.btn-check:checked + .btn:focus-visible, .btn-check:checked + .more-info-button:focus-visible, .btn-check:checked + .add-extension-button:focus-visible, :not(.btn-check) + .btn:active:focus-visible, :not(.btn-check) + .more-info-button:active:focus-visible, :not(.btn-check) + .add-extension-button:active:focus-visible, .btn:first-child:active:focus-visible, .more-info-button:first-child:active:focus-visible, .add-extension-button:first-child:active:focus-visible, .btn.active:focus-visible, .active.more-info-button:focus-visible, .active.add-extension-button:focus-visible, .btn.show:focus-visible, .show.more-info-button:focus-visible, .show.add-extension-button:focus-visible {
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn:disabled, .btn.disabled, fieldset:disabled .btn {
+.btn:disabled, .more-info-button:disabled, .add-extension-button:disabled, .btn.disabled, .disabled.more-info-button, .disabled.add-extension-button, fieldset:disabled .btn, fieldset:disabled .more-info-button, fieldset:disabled .add-extension-button {
   color: var(--bs-btn-disabled-color);
   pointer-events: none;
   background-color: var(--bs-btn-disabled-bg);
@@ -2963,7 +2967,7 @@ textarea.form-control-lg {
   opacity: var(--bs-btn-disabled-opacity);
 }
 
-.btn-primary {
+.btn-primary, .more-info-button, .add-extension-button {
   --bs-btn-color: #fff;
   --bs-btn-bg: #5265E1;
   --bs-btn-border-color: #5265E1;
@@ -3257,14 +3261,14 @@ textarea.form-control-lg {
   color: var(--bs-btn-hover-color);
 }
 
-.btn-lg, .btn-group-lg > .btn {
+.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .more-info-button, .btn-group-lg > .add-extension-button {
   --bs-btn-padding-y: 0.5rem;
   --bs-btn-padding-x: 1rem;
   --bs-btn-font-size: 1.25rem;
   --bs-btn-border-radius: var(--bs-border-radius-lg);
 }
 
-.btn-sm, .btn-group-sm > .btn {
+.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .more-info-button, .btn-group-sm > .add-extension-button {
   --bs-btn-padding-y: 0.25rem;
   --bs-btn-padding-x: 0.5rem;
   --bs-btn-font-size: 0.875rem;
@@ -3631,23 +3635,47 @@ textarea.form-control-lg {
   display: inline-flex;
   vertical-align: middle;
 }
-.btn-group > .btn,
-.btn-group-vertical > .btn {
+.btn-group > .btn, .btn-group > .more-info-button, .btn-group > .add-extension-button,
+.btn-group-vertical > .btn,
+.btn-group-vertical > .more-info-button,
+.btn-group-vertical > .add-extension-button {
   position: relative;
   flex: 1 1 auto;
 }
-.btn-group > .btn-check:checked + .btn,
+.btn-group > .btn-check:checked + .btn, .btn-group > .btn-check:checked + .more-info-button, .btn-group > .btn-check:checked + .add-extension-button,
 .btn-group > .btn-check:focus + .btn,
+.btn-group > .btn-check:focus + .more-info-button,
+.btn-group > .btn-check:focus + .add-extension-button,
 .btn-group > .btn:hover,
+.btn-group > .more-info-button:hover,
+.btn-group > .add-extension-button:hover,
 .btn-group > .btn:focus,
+.btn-group > .more-info-button:focus,
+.btn-group > .add-extension-button:focus,
 .btn-group > .btn:active,
+.btn-group > .more-info-button:active,
+.btn-group > .add-extension-button:active,
 .btn-group > .btn.active,
+.btn-group > .active.more-info-button,
+.btn-group > .active.add-extension-button,
 .btn-group-vertical > .btn-check:checked + .btn,
+.btn-group-vertical > .btn-check:checked + .more-info-button,
+.btn-group-vertical > .btn-check:checked + .add-extension-button,
 .btn-group-vertical > .btn-check:focus + .btn,
+.btn-group-vertical > .btn-check:focus + .more-info-button,
+.btn-group-vertical > .btn-check:focus + .add-extension-button,
 .btn-group-vertical > .btn:hover,
+.btn-group-vertical > .more-info-button:hover,
+.btn-group-vertical > .add-extension-button:hover,
 .btn-group-vertical > .btn:focus,
+.btn-group-vertical > .more-info-button:focus,
+.btn-group-vertical > .add-extension-button:focus,
 .btn-group-vertical > .btn:active,
-.btn-group-vertical > .btn.active {
+.btn-group-vertical > .more-info-button:active,
+.btn-group-vertical > .add-extension-button:active,
+.btn-group-vertical > .btn.active,
+.btn-group-vertical > .active.more-info-button,
+.btn-group-vertical > .active.add-extension-button {
   z-index: 1;
 }
 
@@ -3663,19 +3691,27 @@ textarea.form-control-lg {
 .btn-group {
   border-radius: var(--bs-border-radius);
 }
-.btn-group > :not(.btn-check:first-child) + .btn,
+.btn-group > :not(.btn-check:first-child) + .btn, .btn-group > :not(.btn-check:first-child) + .more-info-button, .btn-group > :not(.btn-check:first-child) + .add-extension-button,
 .btn-group > .btn-group:not(:first-child) {
   margin-left: calc(var(--bs-border-width) * -1);
 }
-.btn-group > .btn:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .more-info-button:not(:last-child):not(.dropdown-toggle), .btn-group > .add-extension-button:not(:last-child):not(.dropdown-toggle),
 .btn-group > .btn.dropdown-toggle-split:first-child,
-.btn-group > .btn-group:not(:last-child) > .btn {
+.btn-group > .dropdown-toggle-split.more-info-button:first-child,
+.btn-group > .dropdown-toggle-split.add-extension-button:first-child,
+.btn-group > .btn-group:not(:last-child) > .btn,
+.btn-group > .btn-group:not(:last-child) > .more-info-button,
+.btn-group > .btn-group:not(:last-child) > .add-extension-button {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-.btn-group > .btn:nth-child(n+3),
+.btn-group > .btn:nth-child(n+3), .btn-group > .more-info-button:nth-child(n+3), .btn-group > .add-extension-button:nth-child(n+3),
 .btn-group > :not(.btn-check) + .btn,
-.btn-group > .btn-group:not(:first-child) > .btn {
+.btn-group > :not(.btn-check) + .more-info-button,
+.btn-group > :not(.btn-check) + .add-extension-button,
+.btn-group > .btn-group:not(:first-child) > .btn,
+.btn-group > .btn-group:not(:first-child) > .more-info-button,
+.btn-group > .btn-group:not(:first-child) > .add-extension-button {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -3691,12 +3727,12 @@ textarea.form-control-lg {
   margin-right: 0;
 }
 
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .more-info-button + .dropdown-toggle-split, .btn-group-sm > .add-extension-button + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem;
 }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .more-info-button + .dropdown-toggle-split, .btn-group-lg > .add-extension-button + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem;
 }
@@ -3706,21 +3742,25 @@ textarea.form-control-lg {
   align-items: flex-start;
   justify-content: center;
 }
-.btn-group-vertical > .btn,
+.btn-group-vertical > .btn, .btn-group-vertical > .more-info-button, .btn-group-vertical > .add-extension-button,
 .btn-group-vertical > .btn-group {
   width: 100%;
 }
-.btn-group-vertical > .btn:not(:first-child),
+.btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .more-info-button:not(:first-child), .btn-group-vertical > .add-extension-button:not(:first-child),
 .btn-group-vertical > .btn-group:not(:first-child) {
   margin-top: calc(var(--bs-border-width) * -1);
 }
-.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle),
-.btn-group-vertical > .btn-group:not(:last-child) > .btn {
+.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .more-info-button:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .add-extension-button:not(:last-child):not(.dropdown-toggle),
+.btn-group-vertical > .btn-group:not(:last-child) > .btn,
+.btn-group-vertical > .btn-group:not(:last-child) > .more-info-button,
+.btn-group-vertical > .btn-group:not(:last-child) > .add-extension-button {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-.btn-group-vertical > .btn ~ .btn,
-.btn-group-vertical > .btn-group:not(:first-child) > .btn {
+.btn-group-vertical > .btn ~ .btn, .btn-group-vertical > .more-info-button ~ .btn, .btn-group-vertical > .btn ~ .more-info-button, .btn-group-vertical > .more-info-button ~ .more-info-button, .btn-group-vertical > .add-extension-button ~ .btn, .btn-group-vertical > .add-extension-button ~ .more-info-button, .btn-group-vertical > .btn ~ .add-extension-button, .btn-group-vertical > .more-info-button ~ .add-extension-button, .btn-group-vertical > .add-extension-button ~ .add-extension-button,
+.btn-group-vertical > .btn-group:not(:first-child) > .btn,
+.btn-group-vertical > .btn-group:not(:first-child) > .more-info-button,
+.btn-group-vertical > .btn-group:not(:first-child) > .add-extension-button {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
@@ -4771,7 +4811,7 @@ textarea.form-control-lg {
   display: none;
 }
 
-.btn .badge {
+.btn .badge, .more-info-button .badge, .add-extension-button .badge {
   position: relative;
   top: -1px;
 }
@@ -6723,7 +6763,7 @@ textarea.form-control-lg {
   background-color: currentcolor;
   opacity: 0.5;
 }
-.placeholder.btn::before {
+.placeholder.btn::before, .placeholder.more-info-button::before, .placeholder.add-extension-button::before {
   display: inline-block;
   content: "";
 }
@@ -7953,7 +7993,7 @@ textarea.form-control-lg {
   margin-bottom: 0.5rem !important;
 }
 
-.mb-3 {
+.mb-3, .add-extension-button {
   margin-bottom: 1rem !important;
 }
 
@@ -8829,11 +8869,11 @@ textarea.form-control-lg {
   border-radius: 0 !important;
 }
 
-.rounded-1 {
+.rounded-1, .more-info-button {
   border-radius: var(--bs-border-radius-sm) !important;
 }
 
-.rounded-2 {
+.rounded-2, .add-extension-button {
   border-radius: var(--bs-border-radius) !important;
 }
 
