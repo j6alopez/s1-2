@@ -4,7 +4,10 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 //Custom code 
+@import "./base/tipography";
 
-@import "./base/navigation";
+@import "./layout/navigation";
+
+@import "./components/buttons";
 
 @import "./components/card";

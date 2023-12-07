@@ -4291,7 +4291,7 @@ textarea.form-control-lg {
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-.card, .custom-card {
+.card, .add-to-browser-card {
   --bs-card-spacer-y: 1rem;
   --bs-card-spacer-x: 1rem;
   --bs-card-title-spacer-y: 0.5rem;
@@ -4323,27 +4323,27 @@ textarea.form-control-lg {
   border: var(--bs-card-border-width) solid var(--bs-card-border-color);
   border-radius: var(--bs-card-border-radius);
 }
-.card > hr, .custom-card > hr {
+.card > hr, .add-to-browser-card > hr {
   margin-right: 0;
   margin-left: 0;
 }
-.card > .list-group, .custom-card > .list-group {
+.card > .list-group, .add-to-browser-card > .list-group {
   border-top: inherit;
   border-bottom: inherit;
 }
-.card > .list-group:first-child, .custom-card > .list-group:first-child {
+.card > .list-group:first-child, .add-to-browser-card > .list-group:first-child {
   border-top-width: 0;
   border-top-left-radius: var(--bs-card-inner-border-radius);
   border-top-right-radius: var(--bs-card-inner-border-radius);
 }
-.card > .list-group:last-child, .custom-card > .list-group:last-child {
+.card > .list-group:last-child, .add-to-browser-card > .list-group:last-child {
   border-bottom-width: 0;
   border-bottom-right-radius: var(--bs-card-inner-border-radius);
   border-bottom-left-radius: var(--bs-card-inner-border-radius);
 }
-.card > .card-header + .list-group, .custom-card > .card-header + .list-group,
+.card > .card-header + .list-group, .add-to-browser-card > .card-header + .list-group,
 .card > .list-group + .card-footer,
-.custom-card > .list-group + .card-footer {
+.add-to-browser-card > .list-group + .card-footer {
   border-top: 0;
 }
 
@@ -4437,7 +4437,7 @@ textarea.form-control-lg {
   border-bottom-left-radius: var(--bs-card-inner-border-radius);
 }
 
-.card-group > .card, .card-group > .custom-card {
+.card-group > .card, .card-group > .add-to-browser-card {
   margin-bottom: var(--bs-card-group-margin);
 }
 @media (min-width: 576px) {
@@ -4445,40 +4445,40 @@ textarea.form-control-lg {
     display: flex;
     flex-flow: row wrap;
   }
-  .card-group > .card, .card-group > .custom-card {
+  .card-group > .card, .card-group > .add-to-browser-card {
     flex: 1 0 0%;
     margin-bottom: 0;
   }
-  .card-group > .card + .card, .card-group > .custom-card + .card, .card-group > .card + .custom-card, .card-group > .custom-card + .custom-card {
+  .card-group > .card + .card, .card-group > .add-to-browser-card + .card, .card-group > .card + .add-to-browser-card, .card-group > .add-to-browser-card + .add-to-browser-card {
     margin-left: 0;
     border-left: 0;
   }
-  .card-group > .card:not(:last-child), .card-group > .custom-card:not(:last-child) {
+  .card-group > .card:not(:last-child), .card-group > .add-to-browser-card:not(:last-child) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
-  .card-group > .card:not(:last-child) .card-img-top, .card-group > .custom-card:not(:last-child) .card-img-top,
+  .card-group > .card:not(:last-child) .card-img-top, .card-group > .add-to-browser-card:not(:last-child) .card-img-top,
   .card-group > .card:not(:last-child) .card-header,
-  .card-group > .custom-card:not(:last-child) .card-header {
+  .card-group > .add-to-browser-card:not(:last-child) .card-header {
     border-top-right-radius: 0;
   }
-  .card-group > .card:not(:last-child) .card-img-bottom, .card-group > .custom-card:not(:last-child) .card-img-bottom,
+  .card-group > .card:not(:last-child) .card-img-bottom, .card-group > .add-to-browser-card:not(:last-child) .card-img-bottom,
   .card-group > .card:not(:last-child) .card-footer,
-  .card-group > .custom-card:not(:last-child) .card-footer {
+  .card-group > .add-to-browser-card:not(:last-child) .card-footer {
     border-bottom-right-radius: 0;
   }
-  .card-group > .card:not(:first-child), .card-group > .custom-card:not(:first-child) {
+  .card-group > .card:not(:first-child), .card-group > .add-to-browser-card:not(:first-child) {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
-  .card-group > .card:not(:first-child) .card-img-top, .card-group > .custom-card:not(:first-child) .card-img-top,
+  .card-group > .card:not(:first-child) .card-img-top, .card-group > .add-to-browser-card:not(:first-child) .card-img-top,
   .card-group > .card:not(:first-child) .card-header,
-  .card-group > .custom-card:not(:first-child) .card-header {
+  .card-group > .add-to-browser-card:not(:first-child) .card-header {
     border-top-left-radius: 0;
   }
-  .card-group > .card:not(:first-child) .card-img-bottom, .card-group > .custom-card:not(:first-child) .card-img-bottom,
+  .card-group > .card:not(:first-child) .card-img-bottom, .card-group > .add-to-browser-card:not(:first-child) .card-img-bottom,
   .card-group > .card:not(:first-child) .card-footer,
-  .card-group > .custom-card:not(:first-child) .card-footer {
+  .card-group > .add-to-browser-card:not(:first-child) .card-footer {
     border-bottom-left-radius: 0;
   }
 }
@@ -7503,7 +7503,7 @@ textarea.form-control-lg {
   border-color: var(--bs-danger-border-subtle) !important;
 }
 
-.border-light-subtle {
+.border-light-subtle, .add-to-browser-card {
   border-color: var(--bs-light-border-subtle) !important;
 }
 
@@ -7515,11 +7515,11 @@ textarea.form-control-lg {
   border-width: 1px !important;
 }
 
-.border-2, .custom-nav-link.active, .custom-nav-link:active {
+.border-2 {
   border-width: 2px !important;
 }
 
-.border-3 {
+.border-3, .custom-nav-link.active, .custom-nav-link:active {
   border-width: 3px !important;
 }
 
@@ -7559,7 +7559,7 @@ textarea.form-control-lg {
   width: 50% !important;
 }
 
-.w-75 {
+.w-75, .add-to-browser-card {
   width: 75% !important;
 }
 
@@ -7695,7 +7695,7 @@ textarea.form-control-lg {
   align-items: flex-end !important;
 }
 
-.align-items-center, .custom-card {
+.align-items-center, .add-to-browser-card {
   align-items: center !important;
 }
 
@@ -7799,7 +7799,7 @@ textarea.form-control-lg {
   margin: 0.5rem !important;
 }
 
-.m-3, .custom-card {
+.m-3 {
   margin: 1rem !important;
 }
 
@@ -8435,7 +8435,7 @@ textarea.form-control-lg {
   color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-muted, .custom-nav-link {
+.text-muted, .custom-nav-link, p {
   --bs-text-opacity: 1;
   color: var(--bs-secondary-color) !important;
 }
