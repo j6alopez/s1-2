@@ -9,29 +9,37 @@
 </head>
 
 <body>
-    <section class="navbar navbar-expand">
+    <nav class="navbar navbar-expand">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="images/logo-bookmark.svg" alt="bookMark">
-            </a>
-            <ul class="navbar navbar-expand">
-                <ol class="main-nav justify-content-evenly ">
-                    <li class="nav-item ms-5">
-                        <a class="nav-link" href="#">FEATURES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#">PRICING</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#">CONTACT</a>
-                    </li>
-                    <li class="nav-item me-5">
-                        <a class="nav-link bg-secondary text-white rounded-1" href="#">LOGIN</a>
-                    </li>
-                </ol>
-            </ul>
+            <div class="col">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo-bookmark.svg" alt="bookMark">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBarBav"
+                aria-controls="navBarBav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="col">
+                <div class="collapse navbar-collapse" id="navBarBav">
+                    <ul class="nav mx-auto">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="#">FEATURES</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link " href="#">PRICING</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link " href="#">CONTACT</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link bg-secondary text-white rounded-1" href="#">LOGIN</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </section>
+    </nav>
     <section class="container mt-5">
         <div class="row align-items-center flex-column-reverse flex-md-row">
             <div class="col-md text-md-start text-center">

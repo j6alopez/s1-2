@@ -4,11 +4,6 @@
     left: 0;
 }
 
-.main-nav {
-    @extend .nav;
-    @extend .w-100;
-}
-
 .custom-nav-link {
     @extend .nav-link;
     @extend .border-0;

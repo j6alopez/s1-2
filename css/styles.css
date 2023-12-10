@@ -3765,7 +3765,7 @@ textarea.form-control-lg {
   border-top-right-radius: 0;
 }
 
-.nav, .main-nav {
+.nav {
   --bs-nav-link-padding-x: 1rem;
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-font-weight: ;
@@ -7603,7 +7603,7 @@ textarea.form-control-lg {
   width: 75% !important;
 }
 
-.w-100, .main-nav {
+.w-100 {
   width: 100% !important;
 }
 
