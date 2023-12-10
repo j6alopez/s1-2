@@ -4523,7 +4523,7 @@ textarea.form-control-lg {
   }
 }
 
-.accordion {
+.accordion, .custom-accordion {
   --bs-accordion-color: var(--bs-body-color);
   --bs-accordion-bg: var(--bs-body-bg);
   --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
@@ -4640,21 +4640,21 @@ textarea.form-control-lg {
   padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x);
 }
 
-.accordion-flush .accordion-collapse {
+.accordion-flush .accordion-collapse, .custom-accordion .accordion-collapse {
   border-width: 0;
 }
-.accordion-flush .accordion-item {
+.accordion-flush .accordion-item, .custom-accordion .accordion-item {
   border-right: 0;
   border-left: 0;
   border-radius: 0;
 }
-.accordion-flush .accordion-item:first-child {
+.accordion-flush .accordion-item:first-child, .custom-accordion .accordion-item:first-child {
   border-top: 0;
 }
-.accordion-flush .accordion-item:last-child {
+.accordion-flush .accordion-item:last-child, .custom-accordion .accordion-item:last-child {
   border-bottom: 0;
 }
-.accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
+.accordion-flush .accordion-item .accordion-button, .custom-accordion .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
   border-radius: 0;
 }
 
@@ -7599,7 +7599,7 @@ textarea.form-control-lg {
   width: 50% !important;
 }
 
-.w-75, .add-to-browser-card {
+.w-75 {
   width: 75% !important;
 }
 
@@ -7723,7 +7723,7 @@ textarea.form-control-lg {
   justify-content: space-around !important;
 }
 
-.justify-content-evenly, .main-nav {
+.justify-content-evenly {
   justify-content: space-evenly !important;
 }
 
@@ -11908,4 +11908,21 @@ textarea.form-control-lg {
   position: relative;
   bottom: 0;
   left: 0;
+}
+
+@media (min-width: 768px) {
+  .add-to-browser-card {
+    width: 75%;
+  }
+}
+@media (max-width: 767px) {
+  .add-to-browser-card {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-accordion {
+    width: 75%;
+  }
 }/*# sourceMappingURL=styles.css.map */
