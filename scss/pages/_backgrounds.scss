@@ -1,0 +1,19 @@
+.background-figure {
+    background-color: $primary;
+    position: absolute;
+    width: 72%;
+    height: 72%;
+    z-index: -1;
+    top: 32%;
+    left: 32%;
+    border-radius: 0 0 0 40%;
+}
+
+.background-figure-flipped {
+    @extend .background-figure;
+    top: 32%;
+    width: 90%;
+    left: -20%;
+    height: 100%;
+    transform: scaleX(-1);
+}

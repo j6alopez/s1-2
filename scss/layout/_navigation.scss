@@ -1,0 +1,18 @@
+.nav-border {
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+.custom-nav-link {
+    @extend .nav-link;
+    @extend .border-0;
+    @extend .border-bottom;
+    @extend .text-muted;
+}
+.custom-nav-link.active, .custom-nav-link:active {
+    @extend .border-3;
+    @extend .border-bottom;
+    @extend .border-danger;
+    @extend .text-reset;
+}

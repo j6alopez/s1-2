@@ -1,0 +1,13 @@
+.add-to-browser-card {
+    @extend .card;
+    @extend .align-items-center;
+    @extend .border-light-subtle;
+
+    @media (min-width: 768px) {
+        width: 75%;
+    }
+
+    @media (max-width: 767px) {
+        width: 50%;
+    }
+}
