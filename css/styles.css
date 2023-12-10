@@ -11927,7 +11927,7 @@ textarea.form-control-lg {
   }
 }
 
-.background-figure {
+.background-figure, .background-figure-flipped {
   background-color: #5265E1;
   position: absolute;
   width: 72%;
@@ -11936,4 +11936,12 @@ textarea.form-control-lg {
   top: 32%;
   left: 32%;
   border-radius: 0 0 0 40%;
+}
+
+.background-figure-flipped {
+  top: 32%;
+  width: 90%;
+  left: -20%;
+  height: 100%;
+  transform: scaleX(-1);
 }/*# sourceMappingURL=styles.css.map */
