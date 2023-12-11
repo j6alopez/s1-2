@@ -8,38 +8,32 @@
     <title>BookMark</title>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-md ">
-        <div class="container">
-            <div class="col col-6">
-                <a class="navbar-brand" href="#">
-                    <img src="images/logo-bookmark.svg" alt="bookMark">
-                </a>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBarBav"
-                aria-controls="navBarBav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="col col-6">
-                <div class="collapse navbar-collapse " id="navBarBav">
-                    <ul class="nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">FEATURES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">PRICING</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">CONTACT</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link bg-secondary text-white rounded-1" href="#">LOGIN</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+<nav class="navbar navbar-expand-md">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo-bookmark.svg" alt="bookMark">
+        </a>
+        <button class="navbar-toggler border-0 " type="button" data-bs-toggle="collapse" data-bs-target="#navBarNav" aria-controls="navBarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="images/icon-hamburger.svg" alt="Hamburger Icon">
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navBarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FEATURES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">PRICING</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">CONTACT</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link bg-secondary text-white rounded-1" href="#">LOGIN</a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
     <section class="container mt-5">
         <div class="row align-items-center flex-column-reverse flex-md-row">
             <div class="col-md text-md-start text-center mt-sm-5">
@@ -155,44 +149,44 @@
             </div>
         </div>
     </section>
-    <section class="container text-center mt-5 mb-5">
+    <section class="container text-center my-5 ">
         <h2>Download the extension</h2>
         <p>
             We've got more browsers in the pipeline. Plese do let us know if <br>
             you've got a favourite you'd like us to priritize.
         </p>
-        <div class="row flex-md-row flex-sm-column mt-5 mb-5">
-            <div class="col d-flex justify-content-md-end justify-content-sm-center">
+        <div class="row flex-column flex-md-row my-5">
+            <div class="col d-flex justify-content-center mb-md-5">
                 <div class="add-to-browser-card">
                     <img src="images/logo-chrome.svg" class=" img-fluid mt-3" alt="chrome-logo">
                     <div class="card-body mb-3">
-                        <h4 class="card-title ">Add to Chrome</h4>
+                        <h4 class="card-title">Add to Chrome</h4>
                         <p class="card-text ">Minimium version 62</p>
                     </div>
-                    <img src="images/bg-dots.svg" class="img-fluid mb-3" alt="separator">
-                    <button class="btn btn-primary rounded-2 mb-3" type="button">Add & Install Extension</button>
+                    <img src="images/bg-dots.svg" class="img-fluid mb-3" alt="dots separator">
+                    <button class="col-10 btn btn-primary rounded-2 mb-3" type="button">Add & Install Extension</button>
                 </div>
             </div>
-            <div class="col d-flex justify-content-center mt-3">
+            <div class="col d-flex justify-content-center my-md-3">
                 <div class="add-to-browser-card">
                     <img src="images/logo-firefox.svg" class="img-fluid mt-3" alt="firefox-logo">
                     <div class="card-body mb-3">
                         <h4 class="card-title">Add to Firefox</h4>
                         <p class="card-text">Minimium version 55</p>
                     </div>
-                    <img src="images/bg-dots.svg" class="img-fluid mb-3" alt="separator">
-                    <button class="btn btn-primary rounded-2 mb-3" type="button">Add & Install Extension</button>
+                    <img src="images/bg-dots.svg" class="img-fluid mb-3" alt="dots separator">
+                    <button class="col-10 btn btn-primary rounded-2 mb-3" type="button">Add & Install Extension</button>
                 </div>
             </div>
-            <div class="col d-flex justify-content-center mt-md-5 mt-sm-3">
+            <div class="col d-flex justify-content-center mt-md-5">
                 <div class="add-to-browser-card">
                     <img src="images/logo-opera.svg" class="img-fluid mt-3" alt="opera-logo">
                     <div class="card-body mb-3">
                         <h4 class="card-title">Add to Opera</h4>
                         <p class="card-text">Minimium version 46</p>
                     </div>
-                    <img src="images/bg-dots.svg" class="img-fluid mb-3" alt="separator">
-                    <button class="btn btn-primary rounded-2 mb-3" type="button">Add & Install Extension</button>
+                    <img src="images/bg-dots.svg" class="img-fluid mb-3" alt="dots separator">
+                    <button class="col-10 btn btn-primary rounded-2 mb-3" type="button">Add & Install Extension</button>
                 </div>
             </div>
         </div>
@@ -244,6 +238,25 @@
                 </div>
             </div>
         </div>
+        <footer class="container-fluid bg-primary text-white text-center">
+            <div class="row">
+                <h6 class="my-5">35000+ ALREADY JOINED</h6>
+            </div>
+            <h2 class="mb-2">Stay-up-to-date with what <br> we're doing</h2>
+            <form class="col-md-6 col-sm-10 my-3 align-items-center needs-validation mx-auto" novalidate>
+                <div class="row d-flex flex-md-row flex-sm-column align-items-sm-center">
+                    <div class="col-md-8 col-sm-6">
+                        <input type="email" class="form-control" id="registrationEmail" required
+                            placeholder="Enter your email address">
+                        <div class="invalid-feedback">Invalid email: review misspells</div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 my-sm-2">
+                        <button type="submit" class="btn btn-danger col-sm-12">Contact Us</button>
+                    </div>
+                </div>
+            </form>
+        </footer>
+        <script src="js/form-validation.js"></script>
     </div>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
