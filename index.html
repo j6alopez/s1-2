@@ -9,34 +9,29 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md ">
+    <nav class="navbar navbar-expand-md">
         <div class="container">
-            <div class="col col-6">
-                <a class="navbar-brand" href="#">
-                    <img src="images/logo-bookmark.svg" alt="bookMark">
-                </a>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBarBav"
-                aria-controls="navBarBav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <a class="navbar-brand" href="#">
+                <img src="images/logo-bookmark.svg" alt="bookMark">
+            </a>
+            <button class="navbar-toggler border-0 " type="button" data-bs-toggle="collapse" data-bs-target="#navBarNav" aria-controls="navBarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="images/icon-hamburger.svg" alt="Hamburger Icon">
             </button>
-            <div class="col col-6">
-                <div class="collapse navbar-collapse " id="navBarBav">
-                    <ul class="nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">FEATURES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">PRICING</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">CONTACT</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link bg-secondary text-white rounded-1" href="#">LOGIN</a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navBarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FEATURES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">PRICING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">CONTACT</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link bg-secondary text-white rounded-1" href="#">LOGIN</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -54,7 +49,7 @@
                     <button class="btn btn-light ms-2 rounded-1 " type="button">Get it on Firefox</button>
                 </div>
             </div>
-            <div class="container col-md" style="position: relative;">
+            <div class="container col-md position-relative">
                 <div class="background-figure"></div>
                 <img src="images/illustration-hero.svg" alt="Blue desktop" class="img-fluid">
             </div>
@@ -86,9 +81,10 @@
                 aria-selected="false">Easy Sharing</button>
         </div>
         <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-simple-bookmarking" role="tabpanel" aria-labelledby="nav-simple-bookmarking-tab">
+            <div class="tab-pane fade show active" id="nav-simple-bookmarking" role="tabpanel"
+                aria-labelledby="nav-simple-bookmarking-tab">
                 <div class="row text-center">
-                    <div class="col align-items-center justify-content-center" style="position:relative">
+                    <div class="col align-items-center justify-content-center position-relative">
                         <div class="background-figure-flipped"></div>
                         <img src="images/illustration-features-tab-1.svg" alt="Black desktop">
                     </div>
@@ -109,13 +105,13 @@
             </div>
             <div class="tab-pane fade" id="nav-easy-sharing" role="tabpanel" aria-labelledby="nav-easy-sharing-tab">
                 <div class="row text-center">
-                    <div class="col align-items-center" style="position: relative">
+                    <div class="col align-items-center justify-content-center position-relative">
                         <div class="background-figure-flipped"></div>
                         <img src="images/illustration-features-tab-2.svg" alt="Black desktop">
                     </div>
                     <div class="col text-md-start text-center">
-                        <div class="row">
-                            <h2>Intelligent Search</h2>
+                        <div class="row mt-sm-5">
+                            <h2 class="mt-sm-5">Intelligent Search</h2>
                             <p>
                                 Our powerful search feature will help you find saved <br>
                                 sites in no time at all. No need to trawl through all of <br>
@@ -130,15 +126,16 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="nav-speedy-searching" role="tabpanel" aria-labelledby="nav-speedy-searching-tab">
+            <div class="tab-pane fade" id="nav-speedy-searching" role="tabpanel"
+                aria-labelledby="nav-speedy-searching-tab">
                 <div class="row text-center">
-                    <div class="col align-items-center" style="position: relative">
+                    <div class="col align-items-center justify-content-center position-relative">
                         <div class="background-figure-flipped"></div>
                         <img src="images/illustration-features-tab-3.svg" alt="Black desktop">
                     </div>
-                    <div class="col text-md-start text-center">
+                    <div class="col text-md-start text-center mb-5">
                         <div class="row">
-                            <h2>Share your bookmarks</h2>
+                            <h2 class="mt-sm-5">Share your bookmarks</h2>
                             <p>
                                 Easily share your bookmarks and collections with <br>
                                 others. Create a shareable linkg that you can send at <br>
@@ -155,13 +152,13 @@
             </div>
         </div>
     </section>
-    <section class="container text-center mt-5 mb-5">
+    <section class="container text-center my-5">
         <h2>Download the extension</h2>
         <p>
             We've got more browsers in the pipeline. Plese do let us know if <br>
             you've got a favourite you'd like us to priritize.
         </p>
-        <div class="row flex-md-row flex-sm-column mt-5 mb-5">
+        <div class="row flex-md-row flex-sm-column my-5">
             <div class="col d-flex justify-content-md-end justify-content-sm-center">
                 <div class="add-to-browser-card">
                     <img src="images/logo-chrome.svg" class=" img-fluid mt-3" alt="chrome-logo">
@@ -170,7 +167,7 @@
                         <p class="card-text ">Minimium version 62</p>
                     </div>
                     <img src="images/bg-dots.svg" class="img-fluid mb-3" alt="separator">
-                    <button class="btn btn-primary rounded-2 mb-3" type="button">Add & Install Extension</button>
+                    <button class="add-extension-button" type="button">Add & Install Extension</button>
                 </div>
             </div>
             <div class="col d-flex justify-content-center mt-3">
@@ -181,7 +178,7 @@
                         <p class="card-text">Minimium version 55</p>
                     </div>
                     <img src="images/bg-dots.svg" class="img-fluid mb-3" alt="separator">
-                    <button class="btn btn-primary rounded-2 mb-3" type="button">Add & Install Extension</button>
+                    <button class="add-extension-button" type="button">Add & Install Extension</button>
                 </div>
             </div>
             <div class="col d-flex justify-content-center mt-md-5 mt-sm-3">
@@ -192,50 +189,70 @@
                         <p class="card-text">Minimium version 46</p>
                     </div>
                     <img src="images/bg-dots.svg" class="img-fluid mb-3" alt="separator">
-                    <button class="btn btn-primary rounded-2 mb-3" type="button">Add & Install Extension</button>
+                    <button class="add-extension-button" type="button">Add & Install Extension</button>
                 </div>
             </div>
         </div>
     </section>
-    <div class="container text-center align-items-center">
+    <div class="container text-center align-items-center mb-5 ">
         <h2>Frequently Asked Questions</h2>
         <p>
             Here are some of our FAQs. If you have any other questions <br>
             you'd like answered please feel free to email us.
         </p>
         <div class="row justify-content-center">
-            <div class="custom-accordion">
-                <div class="accordion-item">
+            <div class="custom-accordion" id="mainAccordion">
+                <div class="accordion-item" id="flush-headingOne">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            aria-expanded="false">
+                            data-bs-target="#flush-collapseOne">
                             What is a bookmark?
                         </button>
                     </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#mainAccordion">
+                        <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
+                            animi minus laudantium similique, ratione quis, consequatur recusandae perferendis vitae,
+                            saepe ab illum autem molestiae inventore.</div>
+                    </div>
                 </div>
-                <div class="accordion-item">
+                <div class="accordion-item" id="flush-headingTwo">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            aria-expanded="false">
+                            data-bs-target="#flush-collapseTwo">
                             How can I request a new browser?
                         </button>
                     </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#mainAccordion">
+                        <div class="accordion-body">Lorem ipsum dolor sit amet.</div>
+                    </div>
                 </div>
-                <div class="accordion-item">
+                <div class="accordion-item" id="flush-headingThree">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            aria-expanded="false">
+                            data-bs-target="#flush-collapseThree">
                             Is there a mobile app?
                         </button>
                     </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#mainAccordion">
+                        <div class="accordion-body">Va usté muy cargadoo al ataquerl diodeno no puedor a wan no te digo
+                            trigo</div>
+                    </div>
                 </div>
-                <div class="accordion-item">
+                <div class="accordion-item" id="flush-headingFour">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            aria-expanded="false">
+                            data-bs-target="#flush-collapseFour">
                             What about other Chromium browsers?
                         </button>
                     </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#mainAccordion">
+                        <div class="accordion-body">Va usté muy cargadoo al ataquerl diodeno no puedor a wan no te digo
+                            trigo por no llamarte Rodrigor</div>
+                    </div>
                 </div>
             </div>
             <div class="row justify-content-center mt-3">
@@ -245,6 +262,25 @@
             </div>
         </div>
     </div>
+    <footer class="container-fluid bg-primary text-white text-center">
+        <div class="row">
+            <h6 class="my-5">35000+ ALREADY JOINED</h6>
+        </div>
+        <h2 class="mb-2">Stay-up-to-date with what <br> we're doing</h2>
+        <form class="col-md-6 col-sm-10 my-3 align-items-center needs-validation mx-auto" novalidate>
+            <div class="row d-flex flex-md-row flex-sm-column align-items-sm-center">
+                <div class="col-md-8 col-sm-6">
+                    <input type="email" class="form-control" id="registrationEmail" required
+                        placeholder="Enter your email address">
+                    <div class="invalid-feedback">Invalid email: review misspells</div>
+                </div>
+                <div class="col-md-4 col-sm-6 my-sm-2">
+                    <button type="submit" class="btn btn-danger col-sm-12">Contact Us</button>
+                </div>
+            </div>
+        </form>
+    </footer>
+    <script src="js/form-validation.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 

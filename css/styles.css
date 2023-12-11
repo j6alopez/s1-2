@@ -9426,7 +9426,7 @@ textarea.form-control-lg {
   .mb-sm-4 {
     margin-bottom: 1.5rem !important;
   }
-  .mb-sm-5 {
+  .mb-sm-5, .background-figure-flipped {
     margin-bottom: 3rem !important;
   }
   .mb-sm-auto {
@@ -11942,6 +11942,6 @@ textarea.form-control-lg {
   top: 32%;
   width: 90%;
   left: -20%;
-  height: 100%;
+  height: 80%;
   transform: scaleX(-1);
 }/*# sourceMappingURL=styles.css.map */
