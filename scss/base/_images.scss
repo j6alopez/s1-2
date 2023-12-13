@@ -1,3 +1,11 @@
+#logo-bookmark {
+    filter: invert(0.3);
+}
+
+.social-media-icon:hover {
+    background: $secondary;
+}
+
 .background-figure {
     background-color: $primary;
     position: absolute;
@@ -10,10 +18,13 @@
 }
 
 .background-figure-flipped {
-    @extend .background-figure;
-    top: 32%;
+    background-color: $primary;
+    position: absolute;
     width: 90%;
-    left: -20%;
     height: 100%;
+    z-index: -1;
+    top: 32%;
+    left: -20%;
+    border-radius: 0 0 0 40%;
     transform: scaleX(-1);
 }

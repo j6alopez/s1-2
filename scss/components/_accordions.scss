@@ -1,0 +1,14 @@
+#main-accordion {
+  @media (max-width: 768px) {
+    width: 75%;
+  }
+}
+
+.accordion-button {
+  &:hover {
+    color: $secondary !important;
+  }
+  &:active .img-fluid {
+    color: red !important;
+  }
+}
