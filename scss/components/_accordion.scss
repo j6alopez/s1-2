@@ -1,7 +1,4 @@
-.custom-accordion {
-    @extend .accordion;
-    @extend .accordion-flush;
-
+#mainAccordion {
     @media (max-width: 768px) {
         width: 75%;
     }
