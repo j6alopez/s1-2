@@ -11936,7 +11936,7 @@ p {
 }
 
 .nav-link:hover {
-  color: #FA5959;
+  color: #FA5959 !important;
 }
 
 #nav-bar-bottom .nav-link {
