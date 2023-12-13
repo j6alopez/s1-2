@@ -25,7 +25,7 @@
             <div class="col-md collapse navbar-collapse justify-content-center" id="navBarNav">
                 <ul class="navbar-nav text-center">
                     <li class="nav-item">
-                        <a class="nav-link mx-3" href="#">FEATURES</a>
+                        <a class="nav-link mx-3" id="features" href="#">FEATURES</a>
                     </li>
                     <li class="nav-item mx-3">
                         <a class="nav-link" href="#">PRICING</a>
@@ -33,8 +33,8 @@
                     <li class="nav-item  mx-3">
                         <a class="nav-link" href="#">CONTACT</a>
                     </li>
-                    <li class="nav-item mx-2 col-3 align-self-center ">
-                        <a class="nav-link bg-secondary text-white rounded-1" href="#">LOGIN</a>
+                    <li class="nav-item mx-2 col-3 align-self-center">
+                        <a class="nav-link rounded-1" id="login" href="#">LOGIN</a>
                     </li>
                 </ul>
             </div>
@@ -50,8 +50,8 @@
                     load instantly. Try it for free.
                 </p>
                 <div class="btn-group" role="group">
-                    <button class="btn btn-primary me-2 rounded-1 " type="button">Get it on Chrome</button>
-                    <button class="btn btn-light ms-2 rounded-1 " type="button">Get it on Firefox</button>
+                    <button class="btn btn-primary me-2 rounded-1" id="get-it-on-chrome" type="button">Get it on Chrome</button>
+                    <button class="btn btn-light ms-2 rounded-1 "  id="get-it-on-firefox" type="button">Get it on Firefox</button>
                 </div>
             </div>
             <div class="container col-md" style="position: relative;">
@@ -73,15 +73,15 @@
         </div>
         <div class="nav nav-justified border-0 flex-md-row flex-sm-column mb-5" id="nav-tab" role="tablist">
 
-            <button class="nav-link custom-nav-link border-0 border-bottom text-muted active" id="nav-simple-bookmarking-tab" data-bs-toggle="tab"
+            <button class="nav-link border-0 border-bottom active" id="nav-simple-bookmarking-tab" data-bs-toggle="tab"
                 data-bs-target="#nav-simple-bookmarking" type="button" role="tab" aria-controls="nav-simple-bookmarking"
                 aria-selected="true">Simple Bookmarking</button>
 
-            <button class="nav-link custom-nav-link border-0 border-bottom text-muted" id="nav-speedy-searching-tab" data-bs-toggle="tab"
+            <button class="nav-link border-0 border-bottom" id="nav-speedy-searching-tab" data-bs-toggle="tab"
                 data-bs-target="#nav-speedy-searching" type="button" role="tab" aria-controls="nav-speedy-searching"
                 aria-selected="false">Speedy Searching</button>
 
-            <button class="nav-link custom-nav-link border-0 border-bottom text-muted" id="nav-easy-sharing-tab" data-bs-toggle="tab"
+            <button class="nav-link border-0 border-bottom" id="nav-easy-sharing-tab" data-bs-toggle="tab"
                 data-bs-target="#nav-easy-sharing" type="button" role="tab" aria-controls="nav-easy-sharing"
                 aria-selected="false">Easy Sharing</button>
         </div>
@@ -206,16 +206,16 @@
             you'd like answered please feel free to email us.
         </p>
         <div class="row justify-content-center">
-            <div class="accordion accordion-flush" id="mainAccordion">
+            <div class="accordion accordion-flush" id="main-accordion">
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne">
+                            data-bs-target="#collapse-one">
                             What is a bookmark?
                         </button>
                     </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="collapseOne"
-                        data-bs-parent="#mainAccordion">
+                    <div id="collapse-one" class="accordion-collapse collapse" aria-labelledby="collapse-one"
+                        data-bs-parent="#main-accordion">
                         <div class="accordion-body">
                             Va usté muy cargadoo al ataquerl diodeno no puedor a wan no te digo trigo
                         </div>
@@ -224,12 +224,12 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo">
+                            data-bs-target="#collapse-two">
                             How can I request a new browser?
                         </button>
                     </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="collapseTwo"
-                        data-bs-parent="#mainAccordion">
+                    <div id="collapse-two" class="accordion-collapse collapse" aria-labelledby="collapse-two"
+                        data-bs-parent="#main-accordion">
                         <div class="accordion-body">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, illum.
                         </div>
@@ -238,26 +238,26 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree">
+                            data-bs-target="#collapse-three">
                             Is there a mobile app?
                         </button>
                     </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="collapseThree"
-                        data-bs-parent="#mainAccordion">
+                    <div id="collapse-three" class="accordion-collapse collapse" aria-labelledby="collapse-three"
+                        data-bs-parent="#main-accordion">
                         <div class="accordion-body">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, illum.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFour">
+                            data-bs-target="#collapse-four">
                             What about other Chromium browsers?
                         </button>
                     </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="collapseFour"
-                        data-bs-parent="#mainAccordion">
+                    <div id="collapse-four" class="accordion-collapse collapse" aria-labelledby="collapse-four"
+                        data-bs-parent="#main-accordion">
                         <div class="accordion-body">
                             Amatomaa jarl va usté muy cargadoo qué dise usteer a gramenawer no te digo trigo por no
                             llamarte Rodrigor.
@@ -282,35 +282,36 @@
                 <div class="col-md-7 col-6">
                     <input type="email" class="form-control" id="registrationEmail" required
                         placeholder="Enter your email address">
-                    <div class="invalid-feedback">Invalid email: review misspells</div>
+                    <div class="valid-feedback">Registration success!</div>
+                    <div class="invalid-feedback rounded-1 my-0">Invalid email: review for mistakes</div>
                 </div>
                 <div class="col-md-5 col-6 my-2">
-                    <button type="submit" class="btn btn-danger col-12">Contact Us</button>
+                    <button type="submit" class="btn btn-danger col-12" id="contact-us">Contact Us</button>
                 </div>
             </div>
         </form>
         <nav class="navbar navbar-expand navbar-dark bg-dark flex-md-row flex-column">
             <div class="col-md-3">
                 <a class="navbar-brand" href="#">
-                    <img src="images/logo-bookmark.svg" alt="bookMark" style="filter: invert(0.1);">
+                    <img src="images/logo-bookmark.svg" alt="bookMark" class="#logo-bookmark">
                 </a>
             </div>
             <div class="col-md-7 ">
-                <ul class="navbar-nav flex-md-row flex-column">
+                <ul class="navbar-nav flex-md-row flex-column" id="nav-bar-bottom">
                     <li class="nav-item col-md-3 g-md-1 p-md-0 p-1 col-12">
-                        <a class="nav-link text-white" href="#">FEATURES </a>
+                        <a class="nav-link" href="#">FEATURES </a>
                     </li>
                     <li class="nav-item col-md-3 g-md-1 p-md-0 p-1 col-12">
-                        <a class="nav-link text-white" href="#">PRICING</a>
+                        <a class="nav-link " href="#">PRICING</a>
                     </li>
                     <li class="nav-item col-md-3 g-md-1 p-md-0 p-1 col-12">
-                        <a class="nav-link text-white" href="#">CONTACT</a>
+                        <a class="nav-link" href="#">CONTACT</a>
                     </li>
                 </ul>
             </div>
             <div class="col-2 d-flex justify-content-around">
-                <img src="images/icon-facebook.svg" alt="icon-facebook">
-                <img src="images/icon-twitter.svg" alt="icon-facebook">
+                <img src="images/icon-facebook.svg" alt="icon-facebook" class="social-media-icon">
+                <img src="images/icon-twitter.svg" alt="icon-facebook" class="social-media-icon">
             </div>
         </nav>
     </footer>

@@ -1,6 +1,22 @@
-.add-extension-button {
+.add-extension-button,
+#get-it-on-chrome {
   &:hover {
     background-color: white;
     color: $primary;
+  }
+}
+
+#get-it-on-firefox:hover {
+  background-color: white;
+}
+
+#login,
+#contact-us {
+  background-color: $secondary;
+  color: white;
+  &:hover {
+    background-color: white;
+    color: $secondary;
+    border: $secondary solid 1px;
   }
 }

@@ -4,6 +4,26 @@
     left: 0;
 }
 
-.custom-nav-link.active, .custom-nav-link:active {
-    @extend .border-danger;
+.nav-link:hover{
+    color:$secondary;
+} 
+
+#nav-bar-bottom .nav-link {
+    color: white;
+}
+
+#nav-simple-bookmarking-tab,
+#nav-speedy-searching-tab,
+#nav-easy-sharing-tab {
+    border: none;
+    color:$body-secondary-color;
+    &.active,:active {
+        color: $black;
+        border-bottom: $secondary solid 3px !important;
+    }
+
+    &:hover {
+        color: $secondary;
+    }
+
 }
