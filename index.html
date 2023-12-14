@@ -17,8 +17,9 @@
                 </a>
             </div>
             <div class="col d-flex justify-content-end">
-                <button class="navbar-toggler border-0 " type="button" data-bs-toggle="collapse" data-bs-target="#navBarNav"
-                    aria-controls="navBarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler border-0 " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navBarNav" aria-controls="navBarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <img src="images/icon-hamburger.svg" alt="Hamburger Icon">
                 </button>
             </div>
@@ -50,12 +51,14 @@
                     load instantly. Try it for free.
                 </p>
                 <div class="btn-group" role="group">
-                    <button class="btn btn-primary me-2 rounded-1" id="get-it-on-chrome" type="button">Get it on Chrome</button>
-                    <button class="btn btn-light ms-2 rounded-1 "  id="get-it-on-firefox" type="button">Get it on Firefox</button>
+                    <button class="btn btn-primary me-2 rounded-1" id="get-it-on-chrome" type="button">Get it on
+                        Chrome</button>
+                    <button class="btn btn-light ms-2 rounded-1 " id="get-it-on-firefox" type="button">Get it on
+                        Firefox</button>
                 </div>
             </div>
             <div class="container col-md" style="position: relative;">
-                <div class="background-figure"></div>
+                <!-- <div class="background-figure img-fluid"></div> -->
                 <img src="images/illustration-hero.svg" alt="Blue desktop" class="img-fluid">
             </div>
         </div>
@@ -88,7 +91,7 @@
         <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-simple-bookmarking" role="tabpanel"
                 aria-labelledby="nav-simple-bookmarking-tab">
-                <div class="row text-center">
+                <div class="row text-center flex-md-row flex-column">
                     <div class="col align-items-center justify-content-center" style="position:relative">
                         <div class="background-figure-flipped"></div>
                         <img src="images/illustration-features-tab-1.svg" alt="Black desktop" class="img-fluid">
@@ -109,7 +112,7 @@
                 </div>
             </div>
             <div class="tab-pane fade" id="nav-easy-sharing" role="tabpanel" aria-labelledby="nav-easy-sharing-tab">
-                <div class="row text-center">
+                <div class="row text-center flex-md-row flex-column">
                     <div class="col align-items-center justify-content-center" style="position: relative">
                         <div class="background-figure-flipped"></div>
                         <img src="images/illustration-features-tab-2.svg" alt="Black desktop" class="img-fluid">
@@ -131,7 +134,7 @@
             </div>
             <div class="tab-pane fade" id="nav-speedy-searching" role="tabpanel"
                 aria-labelledby="nav-speedy-searching-tab">
-                <div class="row text-center">
+                <div class="row text-center flex-md-row flex-column">
                     <div class="col align-items-center justify-content-center" style="position: relative">
                         <div class="background-figure-flipped"></div>
                         <img src="images/illustration-features-tab-3.svg" alt="Black desktop" class="img-fluid">
@@ -168,7 +171,8 @@
                         <p class="card-text ">Minimium version 62</p>
                     </div>
                     <img src="images/bg-dots.svg" class="img-fluid mb-3" alt="dots separator">
-                    <button class="col-10 btn btn-primary rounded-2 mb-3 add-extension-button" type="button">Add & Install Extension</button>
+                    <button class="col-10 btn btn-primary rounded-2 mb-3 add-extension-button" type="button">Add &
+                        Install Extension</button>
                 </div>
             </div>
             <div class="col d-flex justify-content-center my-md-3">
@@ -179,7 +183,8 @@
                         <p class="card-text">Minimium version 55</p>
                     </div>
                     <img src="images/bg-dots.svg" class="img-fluid mb-3" alt="dots separator">
-                    <button class="col-10 btn btn-primary rounded-2 mb-3 add-extension-button" type="button">Add & Install Extension</button>
+                    <button class="col-10 btn btn-primary rounded-2 mb-3 add-extension-button" type="button">Add &
+                        Install Extension</button>
                 </div>
             </div>
             <div class="col d-flex justify-content-center mt-md-5">
@@ -190,7 +195,8 @@
                         <p class="card-text">Minimium version 46</p>
                     </div>
                     <img src="images/bg-dots.svg" class="img-fluid mb-3" alt="dots separator">
-                    <button class="col-10 btn btn-primary rounded-2 mb-3 add-extension-button" type="button">Add & Install Extension</button>
+                    <button class="col-10 btn btn-primary rounded-2 mb-3 add-extension-button" type="button">Add &
+                        Install Extension</button>
                 </div>
             </div>
         </div>
@@ -263,53 +269,53 @@
             </div>
             <div class="row justify-content-center my-4">
                 <div class="col align-items-center text-center">
-                    <button class="btn btn-primary rounded-1  type="button">More info</button>
+                    <button class="btn btn-primary rounded-1  type=" button">More info</button>
                 </div>
             </div>
         </div>
     </div>
-    <footer class="bg-primary text-white text-center">
+    <footer class="container-fluid bg-primary text-white text-center">
         <div class="row">
             <h6 class="my-5">35000+ ALREADY JOINED</h6>
+            <h2>Stay-up-to-date with what <br> we're doing</h2>
+            <form class="col-md-8 my-3 align-items-center needs-validation mx-auto" novalidate>
+                <div class="row d-flex flex-md-row flex-column align-items-center">
+                    <div class="col-md-7 col-6">
+                        <input type="email" class="form-control" id="registrationEmail" required
+                            placeholder="Enter your email address">
+                        <div class="valid-feedback">Registration success!</div>
+                        <div class="invalid-feedback rounded-1 my-0">Invalid email: review for mistakes</div>
+                    </div>
+                    <div class="col-md-5 col-6 my-2">
+                        <button type="submit" class="btn btn-danger col-12" id="contact-us">Contact Us</button>
+                    </div>
+                </div>
+            </form>
+            <nav class="navbar navbar-expand navbar-dark bg-dark flex-md-row flex-column col">
+                <div class="col-md-3">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo-bookmark.svg" alt="bookMark" class="#logo-bookmark">
+                    </a>
+                </div>
+                <div class="col-md-7">
+                    <ul class="navbar-nav flex-md-row flex-column" id="nav-bar-bottom">
+                        <li class="nav-item col-md-3 g-md-1 p-md-0 p-1 col-12">
+                            <a class="nav-link" href="#">FEATURES </a>
+                        </li>
+                        <li class="nav-item col-md-3 g-md-1 p-md-0 p-1 col-12">
+                            <a class="nav-link " href="#">PRICING</a>
+                        </li>
+                        <li class="nav-item col-md-3 g-md-1 p-md-0 p-1 col-12">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-2 d-flex justify-content-around">
+                    <img src="images/icon-facebook.svg" alt="icon-facebook" class="social-media-icon">
+                    <img src="images/icon-twitter.svg" alt="icon-facebook" class="social-media-icon">
+                </div>
+            </nav>
         </div>
-        <h2 class="mb-2">Stay-up-to-date with what <br> we're doing</h2>
-        <form class="col-md-8 my-3 align-items-center needs-validation mx-auto" novalidate>
-            <div class="row d-flex flex-md-row flex-column align-items-center">
-                <div class="col-md-7 col-6">
-                    <input type="email" class="form-control" id="registrationEmail" required
-                        placeholder="Enter your email address">
-                    <div class="valid-feedback">Registration success!</div>
-                    <div class="invalid-feedback rounded-1 my-0">Invalid email: review for mistakes</div>
-                </div>
-                <div class="col-md-5 col-6 my-2">
-                    <button type="submit" class="btn btn-danger col-12" id="contact-us">Contact Us</button>
-                </div>
-            </div>
-        </form>
-        <nav class="navbar navbar-expand navbar-dark bg-dark flex-md-row flex-column">
-            <div class="col-md-3">
-                <a class="navbar-brand" href="#">
-                    <img src="images/logo-bookmark.svg" alt="bookMark" class="#logo-bookmark">
-                </a>
-            </div>
-            <div class="col-md-7 ">
-                <ul class="navbar-nav flex-md-row flex-column" id="nav-bar-bottom">
-                    <li class="nav-item col-md-3 g-md-1 p-md-0 p-1 col-12">
-                        <a class="nav-link" href="#">FEATURES </a>
-                    </li>
-                    <li class="nav-item col-md-3 g-md-1 p-md-0 p-1 col-12">
-                        <a class="nav-link " href="#">PRICING</a>
-                    </li>
-                    <li class="nav-item col-md-3 g-md-1 p-md-0 p-1 col-12">
-                        <a class="nav-link" href="#">CONTACT</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-2 d-flex justify-content-around">
-                <img src="images/icon-facebook.svg" alt="icon-facebook" class="social-media-icon">
-                <img src="images/icon-twitter.svg" alt="icon-facebook" class="social-media-icon">
-            </div>
-        </nav>
     </footer>
     <script src="js/form-validation.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
