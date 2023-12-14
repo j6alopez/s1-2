@@ -11877,6 +11877,11 @@ p {
   left: 32%;
   border-radius: 0 0 0 40%;
 }
+@media (max-width: 576px) {
+  .background-figure {
+    width: 65%;
+  }
+}
 
 .background-figure-flipped {
   background-color: #5265E1;
